@@ -4,7 +4,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const { ApolloServer } = require("apollo-server-express");
 
-const typeDefs = require("./graphql/schema");
+const typeDefs = require("./schema");
 const resolvers = require("./graphql/resolvers");
 const { attachUserFromHeader } = require("./auth/auth");
 
